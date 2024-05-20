@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button {
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+.delete-button {
+    background-color: #ff4d4d;
+    height: fit-content;
+}
+.delete-button:hover {
+    background-color: #ff8080;
+}
+
+.create-button {
+    background-color: #70db70;
+    margin: 5px;
+}
+.create-button:hover {
+    background-color: #adebad;
+}
+
+.other-button {
+    background-color: #99d6ff;
+}
+.other-button:hover {
+    background-color: #b1e0ff;
+}
+
+.entity-manager-container {
+    float: left;
+    width: fit-content; /* Fixed width for the first div */
+    height: 100vh;
+    /* background-color: lightblue; */
+}
+.entity-ops-container {
+    margin-left: 200px; /* Create space for the first div */
+    background-color: #c4e3ed;
+    height: 100vh;
+    overflow: auto;
+    padding: 1rem;
+}
+
+/* =============== Create Entity =============== */
+
+.create-entity {
+    margin: 1rem;
+}
+
+.create-entity .attribute-box{
+    border: 1px solid black;
+    padding: 2px;
+    margin: 2px;
+    background-color: #d9d9d9;
+}
+
+.create-entity .attribute-box *{
+    margin: 2px 5px;
+}
+
+/* =============== Display all Entity names =============== */
+
+.entities-displayer {
+    margin: 1rem;
+}
+
+.entities-selector-table button {
+    margin-right: 1rem;
+    width: 30%;
+}
+
+/* =============== Create new entry in selected entity =============== */
+.create-entry {
+    margin: 1rem;
+}
+
+/* =============== Display selected entity's entries =============== */
+.entity-table {
+    width: fit-content;
+    min-width: 80%;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px dashed black;
+    background: white;
+}
+
+.entity-table .action-buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 150px;
+}
+
+.entity-table button{
+    width: 40%;
+}
+
+table {
+    border-collapse: collapse; /* Ensure borders are not doubled */
+    width: 100%;
+}
+th, td {
+    border: 1px solid black; /* Set the border for table cells */
+    padding: 8px; /* Add some padding for better readability */
+    text-align: left; /* Align text to the left */
+   
+    background-color: #d9d9d9;
+}
+th {
+    background-color: #f2f2f2; /* Add a background color for header */
+}
